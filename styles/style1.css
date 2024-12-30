@@ -5,30 +5,47 @@
     --black-color: #3A3A3A;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 body{
+    background-color: var(--primary_bg_color);
+    font-family: 'poppins', sans-serif;
+    font-weight: 400;
     margin:0;
     padding: 0;
     box-sizing: border-box;
     border:2px outset red;
     width: 100%;
     height: 100%;
-    max-width: 1300px;
-    display: flex;
+    /* max-width: 1300px; */
+
 }
+/* shared styles */
+.primary_btn {
+    background-color: var(--btn-color);
+    padding: 10px 20px;
+    border:0;
+    border-radius: 20px;
+    color:var(--primary_bg_color);
+    
+ }
+
+
 
 header{
-    width: 100%;
+    width: 90%;
     height: 100%;
-    border:2px solid grey;
+    border:2px solid green;
      max-width: 1200px;
-     margin:0 50px;
+     margin:0 40px;
+     padding: 30px 20px;
 }
 
 .nav{
     display: flex;
-    border:2px inset blue;
     justify-content: space-between;
     align-items: center;
+
 
 }
 
@@ -40,7 +57,92 @@ header{
     list-style: none;
     margin-right: 10px;
 }
+
 .nav ul li a{
     text-decoration: none;
     color: var(--black-color);
 }
+
+
+.banner{
+    width: 100%;
+    display:flex;
+  justify-content: space-between;  
+  margin: 20px 0;
+ 
+}
+
+.banner_content{
+align-content: center;
+width: 50%;
+color:var(--black-color);
+}
+
+.banner_content h2 {
+     font-size: 52px;
+     font-weight: 800;
+}
+
+.banner_content h2{
+margin-bottom: 0;
+}
+
+
+
+
+.banner_img_div{
+    background-image: url();
+}
+
+.banner_img_div img{
+    width: 100%;
+    height: 100%;
+}
+
+.sponser{
+  display: flex;
+justify-content: space-evenly;
+align-items: center;
+margin-top: 30px;
+padding: 20px;
+border-top:1px solid grey;
+border-bottom: 1px solid grey;
+/* box-shadow: inset 10px 10px 5px 30px rgb(194, 191, 191); */
+}
+
+/* .sponser img{
+width: 100%;
+height: 100%;
+} */
+
+
+/* main tag style start from here */
+main{
+     width: 90%;
+    height: 100%;
+    border:2px solid green;
+     max-width: 1200px;
+     margin:0 40px;
+     padding: 30px 20px;
+}
+
+.section1{
+    border:2px outset black;
+    
+
+}
+
+/* main tag style end from here */
+
+
+
+/* footer tag style start from here */
+/* footer{
+    width: 100%;
+    height: 100%;
+    border:2px solid grey;
+     max-width: 1200px;
+     margin:0 40px;
+     padding: 10px 20px;
+} */
+/* footer tag style end from here */
