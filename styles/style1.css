@@ -1,6 +1,6 @@
 :root{
 
-    --primary_bg_color:#FFFFFF;
+    --primary_bg_color:#f2f2f2;
     --btn-color:#E02C6D;
     --black-color: #3A3A3A;
 }
@@ -23,7 +23,7 @@ body{
 /* shared styles */
 .primary_btn {
     background-color: var(--btn-color);
-    padding: 10px 20px;
+    padding: 10px 25px;
     border:0;
     border-radius: 20px;
     color:var(--primary_bg_color);
@@ -63,8 +63,9 @@ header{
     color: var(--black-color);
 }
 
-
+/*1. for responsive style */
 .banner{
+
     width: 100%;
     display:flex;
   justify-content: space-between;  
@@ -89,16 +90,18 @@ margin-bottom: 0;
 
 
 
-
-.banner_img_div{
-    background-image: url();
-}
-
-.banner_img_div img{
+/* shared style */
+.banner_img_div img, .img_div img{
     width: 100%;
     height: 100%;
 }
 
+/* share styles */
+p,.rating{
+    color:#787885;
+}
+
+/*1. for responsive style */
 .sponser{
   display: flex;
 justify-content: space-evenly;
@@ -128,8 +131,76 @@ main{
 
 .section1{
     border:2px outset black;
-    
+    text-align: center;
+}
 
+/*1. for responsive style */
+.img_grid_main_box{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+gap:20px;
+}
+
+.img_card{
+    padding:20px;
+    color:var(--black-color);
+    background-color: white;
+    border-radius: 10px;
+}
+
+.card_content{
+    text-align: left;
+    padding:0 20px;
+}
+
+
+.card_content p{
+    margin-top: 0;
+
+}
+
+
+h3,.doller{
+color:black;
+display: block;
+}
+.see_more{
+    text-align: right;
+    margin: 20px 0;
+}
+
+.see_more a{
+    color: var(--btn-color);
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.img_div{
+    width: 100%;
+    height: 100%;
+}
+.img_div img{
+    border-radius: 10px;
+}
+.sec2_content_div{
+    padding: 20px;
+    border:4px outset greenyellow;
+}
+
+/* 3. for responsive */
+.section2{
+    margin: 100px 0;
+    border:2px inset rebeccapurple;
+    display: grid;
+    grid-template-columns: 40% 50%;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.sec2_content_div h3{
+    font-size: 2.5rem;
+    font-weight: 700px;
+    color:black;
 }
 
 /* main tag style end from here */
@@ -137,12 +208,23 @@ main{
 
 
 /* footer tag style start from here */
-/* footer{
+footer{
+
     width: 100%;
-    height: 100%;
-    border:2px solid grey;
-     max-width: 1200px;
-     margin:0 40px;
-     padding: 10px 20px;
-} */
+    border:2px solid green;
+    background-color:black;
+     padding: 50px 0;
+     color:white;
+     text-align: center;
+}
+
+footer h3{
+    color:white;
+    font-size: 1.6rem;
+}
+
+.footer_incons_div{
+    margin-right: 30px;
+    font-size: 1.25rem;
+}
 /* footer tag style end from here */
