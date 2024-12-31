@@ -14,7 +14,6 @@ body{
     margin:0;
     padding: 0;
     box-sizing: border-box;
-    border:2px outset red;
     width: 100%;
     height: 100%;
     /* max-width: 1300px; */
@@ -35,7 +34,6 @@ body{
 header{
     width: 90%;
     height: 100%;
-    border:2px solid green;
      max-width: 1200px;
      margin:0 40px;
      padding: 30px 20px;
@@ -43,10 +41,13 @@ header{
 
 .nav{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
 
+}
 
+.hide_for_desktop{
+    display: none;
 }
 
 .nav ul{
@@ -123,14 +124,12 @@ height: 100%;
 main{
      width: 90%;
     height: 100%;
-    border:2px solid green;
      max-width: 1200px;
      margin:0 40px;
      padding: 30px 20px;
 }
 
 .section1{
-    border:2px outset black;
     text-align: center;
 }
 
@@ -156,7 +155,6 @@ gap:20px;
 
 .card_content p{
     margin-top: 0;
-
 }
 
 
@@ -184,13 +182,11 @@ display: block;
 }
 .sec2_content_div{
     padding: 20px;
-    border:4px outset greenyellow;
 }
 
 /* 3. for responsive */
 .section2{
     margin: 100px 0;
-    border:2px inset rebeccapurple;
     display: grid;
     grid-template-columns: 40% 50%;
    justify-content: space-between;
@@ -211,7 +207,6 @@ display: block;
 footer{
 
     width: 100%;
-    border:2px solid green;
     background-color:black;
      padding: 50px 0;
      color:white;
@@ -224,7 +219,13 @@ footer h3{
 }
 
 .footer_incons_div{
-    margin-right: 30px;
     font-size: 1.25rem;
+}
+.footer_incons_div i{
+    margin-right: 30px;
+}
+
+.hide{
+    display: none;
 }
 /* footer tag style end from here */
